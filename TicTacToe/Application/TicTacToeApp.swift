@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TicTacToeApp: App {
+    @State private var viewModel: GameViewModel
+
+    init() {
+        _viewModel = State(initialValue: AppDIContainer.live().makeGameViewModel())
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameScreen(viewModel: viewModel)
         }
     }
 }

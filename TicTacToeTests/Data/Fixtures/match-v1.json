@@ -1,0 +1,23 @@
+{
+  "game" : {
+    "cells" : [
+      "x",
+      "",
+      "o",
+      "",
+      "x",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "startedBy" : "human",
+    "turn" : "bot"
+  },
+  "record" : {
+    "draws" : 11,
+    "losses" : 5,
+    "wins" : 2
+  },
+  "schemaVersion" : 1
+}

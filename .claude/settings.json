@@ -1,0 +1,92 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mobile detect *)",
+      "Bash(mobile verify *)",
+      "Bash(mobile recon *)",
+      "Bash(mobile risk *)",
+      "Bash(mobile doctor *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git switch *)",
+      "Bash(git checkout -b *)",
+      "Bash(git fetch *)",
+      "Bash(git stash push *)",
+      "Bash(git stash pop *)",
+      "Bash(xcodebuild *)",
+      "Bash(swift build *)",
+      "Bash(swift test *)",
+      "Bash(swift package resolve *)",
+      "Bash(swift package describe *)",
+      "Bash(swift package show-dependencies *)",
+      "Bash(swiftlint lint *)",
+      "Bash(swiftlint version)",
+      "Bash(swiftformat --lint *)",
+      "Bash(xcrun simctl list *)",
+      "Bash(xcrun simctl boot *)",
+      "Bash(xcrun simctl install *)",
+      "Bash(xcrun simctl launch *)",
+      "Bash(xcrun simctl terminate *)",
+      "Bash(xcrun simctl io *)",
+      "Bash(xcrun simctl openurl *)",
+      "Bash(xcrun simctl get_app_container *)",
+      "Bash(xcrun xcresulttool *)",
+      "Bash(xcrun xctrace *)",
+      "Bash(plutil -lint *)",
+      "Bash(plutil -p *)",
+      "Bash(pod install *)",
+      "Bash(bundle exec pod install *)",
+      "Bash(xcrun simctl shutdown *)",
+      "Bash(xcrun simctl uninstall *)",
+      "Bash(xcrun simctl erase *)",
+      "Bash(xcrun simctl delete *)",
+      "Bash(xcrun simctl create *)",
+      "Bash(bundle install *)",
+      "Bash(security find-identity *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(!.env.example)",
+      "Read(!.env.sample)",
+      "Read(*.jks)",
+      "Read(*.keystore)",
+      "Read(*.p12)",
+      "Read(*.p8)",
+      "Read(key.properties)",
+      "Read(keystore.properties)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.netrc)",
+      "Read(~/.gradle/gradle.properties)",
+      "Read(~/.appstoreconnect/**)",
+      "Read(~/Library/Keychains/**)",
+      "Edit(/.mobile-coding-agents.json)",
+      "Bash(fastlane match nuke *)",
+      "Bash(bundle exec fastlane match nuke *)",
+      "Bash(security delete-*)"
+    ],
+    "ask": [
+      "Bash(gh release create *)",
+      "Bash(glab release create *)",
+      "Bash(firebase deploy *)",
+      "Bash(firebase appdistribution:distribute *)",
+      "Bash(xcrun altool *)",
+      "Bash(xcrun notarytool submit *)",
+      "Bash(pod trunk push *)",
+      "Bash(pod repo push *)"
+    ]
+  },
+  "enabledPlugins": {
+    "mobile-core@mobile-coding-agents": true,
+    "mobile-ios@mobile-coding-agents": true
+  },
+  "extraKnownMarketplaces": {
+    "mobile-coding-agents": {
+      "source": {
+        "source": "github",
+        "repo": "MarsXan/mobile-coding-agents"
+      }
+    }
+  }
+}
